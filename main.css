@@ -9,18 +9,31 @@ head, html{
     transition: display 1s ease .5s;
 }
 
+.images{
+    position: relative;
+    min-height: 305px;
+}
 .gallery .headers{
     text-align: center;
 }
 
 .gallery .headers a{
-    margin: 1px 15px;
+    margin: 0 10px;
+    padding: 5px;
     text-decoration: none;
     color: black;
 }
 
-.gallery .images div:not(:target){
-    display: none;
+.gallery .images div:target{
+    z-index: 3;
+}
+.gallery .images > div{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.gallery .images div:first-child{
+    z-index: 2;
 }
 
 .gallery .headers a{
