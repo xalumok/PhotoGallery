@@ -1,0 +1,33 @@
+head, html{
+    margin: 0;
+    width: 100%;
+}
+
+.gallery{
+    width: 450px;
+    margin: 5% auto;
+    transition: display 1s ease .5s;
+}
+
+.gallery .headers{
+    text-align: center;
+}
+
+.gallery .headers a{
+    margin: 1px 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.gallery .images div:not(:target){
+    display: none;
+}
+
+.gallery .headers a{
+    color:grey;
+}
+
+img{
+    height: 300px;
+    width: auto;
+}
